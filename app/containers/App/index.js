@@ -20,10 +20,8 @@ export default function App() {
     // Si on veut afficher plusieurs éléments adjacents,
     // On devra donc les encapsuler dans une DIV parente.
     <div>
-      <Header/>
-      <Machine number="1"/>
-      <Machine number="2"/>
-      <Machine number="3"/>
+      <Header />
+        <Machine/>
       <Footer/>
     </div>
   );
