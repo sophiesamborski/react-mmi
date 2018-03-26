@@ -5,12 +5,12 @@
  */
 import React from 'react';
 
-class Machine extends React.Component {
+class Header extends React.Component {
   render() {
     // Dans tous les cas, afficher
-    return <p className='Machine'>Machine {this.props.number}</p>
+    return <p className='Header'>Header</p>
   }
 }
 
 // Le composant sera accessible avec le nom "Machine"
-export default Machine;
+export default Header;
