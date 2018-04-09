@@ -6,8 +6,8 @@
 import React from 'react';
 
 class Machine extends React.Component {
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
     this.state = {
       data: [
         {id: 0, nom: "Machine 1", isActive: false},
@@ -31,10 +31,10 @@ class Machine extends React.Component {
     
     const mymachines = this.state.data.map((machine) =>
     <div>
-      <li className = {machine.isActive ? "machine active" : "machine"}>
-        {machine.nom}
-        <button onClick={this.changeStatus.bind(this, machine.id)}>{machine.isActive ? "Désactiver" : "Activer"}</button>
-      </li>
+      <p className = {machine.isActive ? "machine active" : "machine"}>
+        {machine.nom}{machine.id}
+        <button onClick={this.changeStatus.bind(this, machine.id)} className="btn">{machine.isActive ? "Désactiver" : "Activer"}</button>
+      </p>
     </div>);
 
     // Dans tous les cas, afficher
