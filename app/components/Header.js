@@ -8,7 +8,7 @@ import React from 'react';
 class Header extends React.Component {
   render() {
     // Dans tous les cas, afficher
-    return <p className='Header'>Machiné à café</p>
+    return <p className='Header'>Machine à café</p>
   }
 }
 

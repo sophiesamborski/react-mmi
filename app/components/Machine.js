@@ -23,7 +23,7 @@ class Machine extends React.Component {
     }else {
       this.state.data[id].isActive = true;
     }
-    this.forceUptate();
+    this.forceUpdate();
   }
   
   
